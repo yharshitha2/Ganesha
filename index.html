@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ganesha — Remover of Obstacles</title>
+  <meta name="description" content="A modern, responsive single‑page website honoring Lord Ganesha — symbolism, stories, and festival traditions." />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🐘</text></svg>">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    :root { color-scheme: dark light }
+    html{scroll-padding-top:5rem}
+    .circle-image {
+      border-radius: 50% / 40%;    
+      object-fit: cover;           
+      width: 100%;               
+      height: auto;
+      max-width: 300px;             
+      display: block;
+      margin: 0 auto;
+      border: 4px solid #fbbf24;    
+      box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    }
+  </style>
+</head>
+<body class="bg-white text-gray-800 dark:bg-zinc-950 dark:text-zinc-100 selection:bg-amber-200/70 selection:text-zinc-900">
+  <!-- Header / Nav -->
+  <header class="sticky top-0 z-50 backdrop-blur bg-white/80 dark:bg-zinc-950/70 border-b border-zinc-200/60 dark:border-zinc-800">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 py-3 flex items-center justify-between">
+      <a href="#home" class="flex items-center gap-3">
+        <span class="inline-flex h-10 w-10 items-center justify-center rounded-2xl bg-amber-100 dark:bg-amber-300/20 text-2xl">🐘</span>
+        <span class="font-semibold text-lg">Ganesha</span>
+      </a>
+      <nav class="hidden md:flex items-center gap-6 text-sm">
+        <a href="#about" class="hover:text-amber-600">About</a>
+        <a href="#symbolism" class="hover:text-amber-600">Symbolism</a>
+        <a href="#festival" class="hover:text-amber-600">Festival</a>
+        <a href="#gallery" class="hover:text-amber-600">Gallery</a>
+        <a href="#faq" class="hover:text-amber-600">FAQ</a>
+      </nav>
+      <div class="flex items-center gap-2">
+        <button id="themeToggle" class="rounded-xl px-3 py-2 text-sm border border-zinc-300 dark:border-zinc-700 hover:bg-zinc-100 dark:hover:bg-zinc-900" aria-label="Toggle dark mode">🌓</button>
+        <button id="menuBtn" class="md:hidden rounded-xl px-3 py-2 text-sm border border-zinc-300 dark:border-zinc-700">Menu</button>
+      </div>
+    </div>
+    <div id="mobileMenu" class="md:hidden hidden border-t border-zinc-200 dark:border-zinc-800 px-4 py-3 space-y-2 text-sm">
+      <a href="#about" class="block">About</a>
+      <a href="#symbolism" class="block">Symbolism</a>
+      <a href="#festival" class="block">Festival</a>
+      <a href="#gallery" class="block">Gallery</a>
+      <a href="#faq" class="block">FAQ</a>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section id="home" class="relative overflow-hidden">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 py-20 md:py-28 grid md:grid-cols-2 gap-10 items-center">
+      <div>
+        <h1 class="text-4xl md:text-6xl font-semibold tracking-tight leading-tight">
+          Lord Ganesha
+        </h1>
+        <p class="mt-4 text-lg md:text-xl text-zinc-600 dark:text-zinc-300 max-w-prose">
+          Revered across the world as the remover of obstacles and patron of arts and learning. Explore his stories, symbols, and the joy of Ganesh Chaturthi.
+        </p>
+        <div class="mt-8 flex gap-3">
+          <a href="#about" class="inline-flex items-center gap-2 rounded-2xl bg-amber-500 hover:bg-amber-600 text-white px-5 py-3 text-sm font-medium shadow">
+            Learn More
+          </a>
+          <a href="#festival" class="inline-flex items-center gap-2 rounded-2xl border border-zinc-300 dark:border-zinc-700 px-5 py-3 text-sm font-medium">
+            Festival Guide
+          </a>
+        </div>
+      </div>
+      <div class="relative">
+        <img src="paint.jpg" alt="Circular Image" class="circle-image">
+
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="py-16 md:py-24 border-t border-zinc-200 dark:border-zinc-800">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 grid md:grid-cols-3 gap-10 items-start">
+      <div class="md:col-span-2">
+        <h2 class="text-3xl md:text-4xl font-semibold">Who is Ganesha?</h2>
+        <p class="mt-4 leading-7 text-zinc-700 dark:text-zinc-300">
+          Ganesha (also spelled Ganesh or Ganapati) is one of the most widely worshipped deities in Hinduism. Recognized by his elephant head and large ears, he symbolizes wisdom, new beginnings, and the removal of obstacles. He is honored before important ventures and is revered by students, artists, and entrepreneurs alike.
+        </p>
+        <div class="mt-6 grid sm:grid-cols-2 gap-4">
+          <div class="p-5 rounded-2xl border border-zinc-200 dark:border-zinc-800">
+            <h3 class="font-medium">Names & Epithets</h3>
+            <ul class="mt-2 list-disc list-inside text-zinc-700 dark:text-zinc-300">
+              <li><span class="font-medium">Vighneshwara</span> — Remover of obstacles</li>
+              <li><span class="font-medium">Ekadanta</span> — One-tusked</li>
+              <li><span class="font-medium">Gajanana</span> — Elephant-faced</li>
+              <li><span class="font-medium">Lambodara</span> — Pot-bellied</li>
+            </ul>
+          </div>
+          <div class="p-5 rounded-2xl border border-zinc-200 dark:border-zinc-800">
+            <h3 class="font-medium">Attributes</h3>
+            <ul class="mt-2 list-disc list-inside text-zinc-700 dark:text-zinc-300">
+              <li>Broken tusk (sacrifice & perseverance)</li>
+              <li>Modak (sweet reward of spiritual practice)</li>
+              <li>Mouse (humility & agility of mind)</li>
+              <li>Noose & goad (guidance and restraint)</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <aside class="md:pl-4">
+        <div class="rounded-2xl p-5 bg-amber-50 dark:bg-amber-900/20 border border-amber-200 dark:border-amber-800">
+          <h3 class="font-medium">Chant</h3>
+          <p class="mt-2 italic">“Om Gam Ganapataye Namaha”</p>
+          <p class="mt-2 text-sm text-zinc-700 dark:text-zinc-300">A popular mantra to invoke Ganesha’s blessings at the start of any endeavor.</p>
+        </div>
+      </aside>
+    </div>
+  </section>
+
+  <!-- Symbolism -->
+  <section id="symbolism" class="py-16 md:py-24">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6">
+      <h2 class="text-3xl md:text-4xl font-semibold">Symbolism at a Glance</h2>
+      <div class="mt-8 grid md:grid-cols-3 gap-6">
+        <div class="p-6 rounded-2xl border border-zinc-200 dark:border-zinc-800">
+          <h3 class="font-medium">Elephant Head</h3>
+          <p class="mt-2 text-zinc-700 dark:text-zinc-300">Represents wisdom, memory, and the ability to discern the essential from the non‑essential.</p>
+        </div>
+        <div class="p-6 rounded-2xl border border-zinc-200 dark:border-zinc-800">
+          <h3 class="font-medium">Large Ears</h3>
+          <p class="mt-2 text-zinc-700 dark:text-zinc-300">Listen more, speak less — a reminder to learn from the world.</p>
+        </div>
+        <div class="p-6 rounded-2xl border border-zinc-200 dark:border-zinc-800">
+          <h3 class="font-medium">Trunk</h3>
+          <p class="mt-2 text-zinc-700 dark:text-zinc-300">Strength with flexibility — adapt to meet challenges with grace.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Festival -->
+  <section id="festival" class="py-16 md:py-24 border-y border-zinc-200 dark:border-zinc-800 bg-zinc-50/60 dark:bg-zinc-900/30">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6">
+      <div class="md:flex items-end justify-between gap-8">
+        <h2 class="text-3xl md:text-4xl font-semibold">Ganesh Chaturthi</h2>
+        <p class="mt-3 md:mt-0 text-zinc-600 dark:text-zinc-300 max-w-2xl">A vibrant 10‑day festival celebrating Ganesha’s birth, marked by home and public installations of his murti (idol), devotional music, sweets, and community service.</p>
+      </div>
+      <ol class="mt-8 grid md:grid-cols-5 gap-4 text-sm">
+        <li class="rounded-2xl p-4 border border-zinc-200 dark:border-zinc-800 bg-white/50 dark:bg-zinc-950/40">
+          <span class="block text-xs uppercase tracking-wide text-zinc-500">Day 1</span>
+          <span class="font-medium">Pranapratishtha</span>
+          <p class="mt-1">Welcoming the deity and beginning daily rituals.</p>
+        </li>
+        <li class="rounded-2xl p-4 border border-zinc-200 dark:border-zinc-800 bg-white/50 dark:bg-zinc-950/40">
+          <span class="block text-xs uppercase tracking-wide text-zinc-500">Days 2–9</span>
+          <span class="font-medium">Puja & Seva</span>
+          <p class="mt-1">Offerings, bhajans, cultural programs, and charitable acts.</p>
+        </li>
+        <li class="rounded-2xl p-4 border border-zinc-200 dark:border-zinc-800 bg-white/50 dark:bg-zinc-950/40">
+          <span class="block text-xs uppercase tracking-wide text-zinc-500">Any Day</span>
+          <span class="font-medium">Modak!</span>
+          <p class="mt-1">A favorite sweet — often steamed (ukadiche) or fried.</p>
+        </li>
+        <li class="rounded-2xl p-4 border border-zinc-200 dark:border-zinc-800 bg-white/50 dark:bg-zinc-950/40">
+          <span class="block text-xs uppercase tracking-wide text-zinc-500">Final Day</span>
+          <span class="font-medium">Visarjan</span>
+          <p class="mt-1">Respectful immersion, bidding farewell and inviting return.</p>
+        </li>
+        <li class="rounded-2xl p-4 border border-zinc-200 dark:border-zinc-800 bg-white/50 dark:bg-zinc-950/40">
+          <span class="block text-xs uppercase tracking-wide text-zinc-500">Always</span>
+          <span class="font-medium">Eco‑friendly</span>
+          <p class="mt-1">Choose clay idols, natural colors, and responsible immersion.</p>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- Gallery -->
+  <section id="gallery" class="py-16 md:py-24">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6">
+      <h2 class="text-3xl md:text-4xl font-semibold">Gallery</h2>
+      <p class="mt-3 text-zinc-600 dark:text-zinc-300">A few public‑domain images you can replace with your own.</p>
+      <div class="mt-8 grid sm:grid-cols-2 md:grid-cols-3 gap-4">
+        <img alt="Ganesha statue" class="rounded-2xl aspect-[4/3] object-cover border border-zinc-200 dark:border-zinc-300" src="Ganesha Statue.jpg"/>
+        <img alt="Ganesh Chaturthi pandal" class="rounded-2xl aspect-[4/3] object-cover border border-zinc-200 dark:border-zinc-800" src="Ganesh Chaturthi pandal.jpg"/>
+        <img alt="Modak sweets" class="rounded-2xl aspect-[4/3] object-cover border border-zinc-200 dark:border-zinc-800" src="Modak sweets.webp"/>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq" class="py-16 md:py-24 border-t border-zinc-200 dark:border-zinc-800">
+    <div class="max-w-3xl mx-auto px-4 sm:px-6">
+      <h2 class="text-3xl md:text-4xl font-semibold">Frequently Asked Questions</h2>
+      <div class="mt-6 divide-y divide-zinc-200 dark:divide-zinc-800" id="faqList">
+        <details class="group py-4">
+          <summary class="flex cursor-pointer list-none items-center justify-between">
+            <span class="font-medium">Why is one tusk broken?</span>
+            <span class="transition-transform group-open:rotate-45 text-xl">＋</span>
+          </summary>
+        <img alt="Modak sweets" class="" src="Why is one tusk broken.webp"/>
+          <p class="mt-2 text-zinc-700 dark:text-zinc-300">Traditions narrate that Ganesha broke his tusk to continue writing the Mahabharata when his pen failed, symbolizing dedication to knowledge.</p>
+        </details>
+        <details class="group py-4">
+          <summary class="flex cursor-pointer list-none items-center justify-between">
+            <span class="font-medium">What offerings are common?</span>
+            <span class="transition-transform group-open:rotate-45 text-xl">＋</span>
+          </summary>
+                  <img alt="Modak sweets" class="" src="grass.jpeg"/>
+
+          <p class="">Fresh flowers, durva grass, coconuts, modak, and incense. Always offer with sincerity and respect.</p>
+        </details>
+        <details class="group py-4">
+          <summary class="flex cursor-pointer list-none items-center justify-between">
+            <span class="font-medium">How can I use this page?</span>
+            <span class="transition-transform group-open:rotate-45 text-xl">＋</span>
+          </summary>
+                  <img alt="Modak sweets" class="" src="community.webp"/>
+          <p class="mt-2 text-zinc-700 dark:text-zinc-300">Replace images, tweak text, and deploy as a festival invite, community page, or educational resource.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="py-10">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 flex flex-col md:flex-row items-center justify-between gap-4">
+      <p class="text-sm text-zinc-500">Made with devotion. ✨</p>
+      <div class="flex gap-4 text-sm">
+        <a class="hover:text-amber-600" href="#about">About</a>
+        <a class="hover:text-amber-600" href="#festival">Festival</a>
+        <a class="hover:text-amber-600" href="#faq">FAQ</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to top -->
+  <button id="toTop" class="hidden fixed bottom-5 right-5 rounded-full w-12 h-12 shadow-lg border border-zinc-200 dark:border-zinc-800 bg-white dark:bg-zinc-900">↑</button>
+
+  <script>
+    // Mobile menu toggle
+    const menuBtn = document.getElementById('menuBtn');
+    const mobileMenu = document.getElementById('mobileMenu');
+    if (menuBtn) menuBtn.addEventListener('click', () => mobileMenu.classList.toggle('hidden'));
+
+    // Dark mode toggle (respects system preference, stores choice)
+    const themeToggle = document.getElementById('themeToggle');
+    const applyTheme = (mode) => {
+      if (mode === 'dark') document.documentElement.classList.add('dark');
+      else document.documentElement.classList.remove('dark');
+    }
+    const saved = localStorage.getItem('theme');
+    if (saved) applyTheme(saved);
+    themeToggle?.addEventListener('click', () => {
+      const next = document.documentElement.classList.contains('dark') ? 'light' : 'dark';
+      applyTheme(next);
+      localStorage.setItem('theme', next);
+    });
+
+    // Back-to-top visibility
+    const toTop = document.getElementById('toTop');
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 600) toTop.classList.remove('hidden');
+      else toTop.classList.add('hidden');
+    });
+    toTop?.addEventListener('click', () => window.scrollTo({top: 0, behavior: 'smooth'}));
+  </script>
+</body>
+</html>
